@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
+using System.Collections;
 
 // Controls a car using Unity's WheelCollider physics and the new Input System
 public class CarController : MonoBehaviour
@@ -20,7 +21,14 @@ public class CarController : MonoBehaviour
     private float throttleInput = 0f;
     private bool isBraking = false;
     private bool isDrifting = false;
-    private bool wasDrifting = false; // Used to prevent repeating drift logic every frame
+    private bool wasDrifting = false;
+    private bool isSpinning = false;
+
+    // Style meter variables
+    private int stylePoints = 0;         // Current style points
+    private float lastHitTime = 0f;      // Time since last style gain
+    private const float decayDelay = 3f; // Time in seconds before style decays
+    private const int maxStyle = 100;    // Maximum style value
 
     // Reference to the input action map (auto-generated from Input Actions asset)
     private CarControls controls;
@@ -45,22 +53,22 @@ public class CarController : MonoBehaviour
         // Drift input (Left Shift)
         controls.Driving.Drift.performed += _ => isDrifting = true;
         controls.Driving.Drift.canceled += _ => isDrifting = false;
+
+        // Attack input (E key)
+        controls.Driving.Attack.performed += _ => SpinAttack();
     }
 
-    // Enable input controls when the object is active
     private void OnEnable() => controls.Enable();
-
-    // Disable input controls when the object is inactive
     private void OnDisable() => controls.Disable();
 
-    // Called on each physics update (FixedUpdate is better for physics)
     private void FixedUpdate()
     {
-        ApplySteering();         // Turn the wheels based on player input
-        ApplyMotor();            // Accelerate based on throttle input
-        ApplyBrakes();           // Brake if braking is active
-        ApplyDrift();            // Adjust friction if drifting
-        UpdateWheelTransforms(); // Sync visual wheels with physics wheels
+        ApplySteering();
+        ApplyMotor();
+        ApplyBrakes();
+        ApplyDrift();
+        UpdateWheelTransforms();
+        UpdateStyleDecay();
     }
 
     // Apply throttle input to the rear wheels
@@ -93,21 +101,17 @@ public class CarController : MonoBehaviour
     {
         if (isDrifting && !wasDrifting)
         {
-            // Drift just started
-            Debug.Log("Drift started");
-            SetFriction(0.5f); // Lower grip = more slide
+            SetFriction(0.5f);
             wasDrifting = true;
         }
         else if (!isDrifting && wasDrifting)
         {
-            // Drift just ended
-            Debug.Log("Drift ended");
-            SetFriction(1.0f); // Restore grip
+            SetFriction(1.0f);
             wasDrifting = false;
         }
     }
 
-    // Set sideways friction stiffness for all wheels
+    // Adjust friction on all wheels
     void SetFriction(float stiffness)
     {
         SetWheelFriction(frontLeftWheel, stiffness);
@@ -116,7 +120,6 @@ public class CarController : MonoBehaviour
         SetWheelFriction(rearRightWheel, stiffness);
     }
 
-    // Apply friction value to one wheel
     void SetWheelFriction(WheelCollider wheel, float stiffness)
     {
         WheelFrictionCurve friction = wheel.sidewaysFriction;
@@ -124,7 +127,7 @@ public class CarController : MonoBehaviour
         wheel.sidewaysFriction = friction;
     }
 
-    // Update the visual wheel models to match the physics wheel positions
+    // Update wheel mesh transforms
     void UpdateWheelTransforms()
     {
         UpdateWheel(frontLeftWheel, frontLeftTransform);
@@ -133,11 +136,72 @@ public class CarController : MonoBehaviour
         UpdateWheel(rearRightWheel, rearRightTransform);
     }
 
-    // Copy the position and rotation from the WheelCollider to the visual mesh
     void UpdateWheel(WheelCollider col, Transform trans)
     {
         col.GetWorldPose(out Vector3 pos, out Quaternion rot);
         trans.position = pos;
         trans.rotation = rot;
+    }
+
+    // Trigger spin attack
+    void SpinAttack()
+    {
+        if (!isSpinning)
+        {
+            StartCoroutine(Spin360());
+            AddStylePoints(10); // Gain style when spinning
+        }
+    }
+
+    // Coroutine to rotate the car 360 degrees
+    IEnumerator Spin360()
+    {
+        isSpinning = true;
+
+        float spinDuration = 0.5f;
+        float elapsed = 0f;
+        float startY = transform.eulerAngles.y;
+        float endY = startY + 360f;
+
+        while (elapsed < spinDuration)
+        {
+            float t = elapsed / spinDuration;
+            float currentY = Mathf.Lerp(startY, endY, t);
+            Vector3 currentEuler = transform.eulerAngles;
+            transform.eulerAngles = new Vector3(currentEuler.x, currentY, currentEuler.z);
+            elapsed += Time.deltaTime;
+            yield return null;
+        }
+
+        transform.eulerAngles = new Vector3(transform.eulerAngles.x, endY % 360f, transform.eulerAngles.z);
+        isSpinning = false;
+    }
+
+    // Add style points (clamped)
+    void AddStylePoints(int amount)
+    {
+        stylePoints = Mathf.Clamp(stylePoints + amount, 0, maxStyle);
+        lastHitTime = Time.time;
+        Debug.Log($"Style: {stylePoints} ({GetStyleRank()})");
+    }
+
+    // Handle automatic decay after inactivity
+    void UpdateStyleDecay()
+    {
+        if (Time.time - lastHitTime > decayDelay && stylePoints > 0)
+        {
+            stylePoints = Mathf.Max(0, stylePoints - 1); // Lose 1 per frame
+            Debug.Log($"Style Decay: {stylePoints} ({GetStyleRank()})");
+        }
+    }
+
+    // Get letter rank based on style meter value
+    string GetStyleRank()
+    {
+        if (stylePoints >= 100) return "S";
+        if (stylePoints >= 75) return "A";
+        if (stylePoints >= 50) return "B";
+        if (stylePoints >= 25) return "C";
+        return "D";
     }
 }
