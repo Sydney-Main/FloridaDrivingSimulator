@@ -195,8 +195,12 @@ public class CarController : MonoBehaviour
         }
     }
 
-    // Get letter rank based on style meter value
-    string GetStyleRank()
+    public int GetCurrentStylePoints()
+    {
+        return stylePoints;
+    }
+
+    public string GetStyleRank()
     {
         if (stylePoints >= 100) return "S";
         if (stylePoints >= 75) return "A";
