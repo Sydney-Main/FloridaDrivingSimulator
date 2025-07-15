@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a019231a8f6976542807a1b047492b92, type: 3}
+  m_Name: RightTurnSegment
+  m_EditorClassIdentifier: 
+  segmentType: Right-Turn
+  entryType: Flat
+  exitType: Flat
+  allowedRotations:
+  - 0
+  - 90
+  - 180
+  - 270
+  prefab: {fileID: 6183108633258644694, guid: d85de0deb058088489832e7d5f8c3797, type: 3}
