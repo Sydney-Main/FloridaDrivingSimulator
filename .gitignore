@@ -73,3 +73,170 @@ crashlytics-build.properties
 # Temporary auto-generated Android Assets
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
 /[Aa]ssets/[Ss]treamingAssets/aa/*
+.github/copilot-instructions.md
+ASG BUILD/D3D12/D3D12Core.dll
+ASG BUILD/Florida Driving Simulator.exe
+ASG BUILD/Florida Driving Simulator_BurstDebugInformation_DoNotShip/Data/Plugins/x86_64/lib_burst_generated.txt
+ASG BUILD/Florida Driving Simulator_Data/app.info
+ASG BUILD/Florida Driving Simulator_Data/boot.config
+ASG BUILD/Florida Driving Simulator_Data/globalgamemanagers
+ASG BUILD/Florida Driving Simulator_Data/globalgamemanagers.assets
+ASG BUILD/Florida Driving Simulator_Data/globalgamemanagers.assets.resS
+ASG BUILD/Florida Driving Simulator_Data/level0
+ASG BUILD/Florida Driving Simulator_Data/Managed/Assembly-CSharp.dll
+ASG BUILD/Florida Driving Simulator_Data/Managed/Mono.Security.dll
+ASG BUILD/Florida Driving Simulator_Data/Managed/mscorlib.dll
+ASG BUILD/Florida Driving Simulator_Data/Managed/netstandard.dll
+ASG BUILD/Florida Driving Simulator_Data/Managed/System.ComponentModel.Composition.dll
+ASG BUILD/Florida Driving Simulator_Data/Managed/System.Configuration.dll
+ASG BUILD/Florida Driving Simulator_Data/Managed/System.Core.dll
+ASG BUILD/Florida Driving Simulator_Data/Managed/System.Data.DataSetExtensions.dll
+ASG BUILD/Florida Driving Simulator_Data/Managed/System.Data.dll
+ASG BUILD/Florida Driving Simulator_Data/Managed/System.dll
+ASG BUILD/Florida Driving Simulator_Data/Managed/System.Drawing.dll
+ASG BUILD/Florida Driving Simulator_Data/Managed/System.EnterpriseServices.dll
+ASG BUILD/Florida Driving Simulator_Data/Managed/System.IO.Compression.dll
+ASG BUILD/Florida Driving Simulator_Data/Managed/System.IO.Compression.FileSystem.dll
+ASG BUILD/Florida Driving Simulator_Data/Managed/System.Net.Http.dll
+ASG BUILD/Florida Driving Simulator_Data/Managed/System.Numerics.dll
+ASG BUILD/Florida Driving Simulator_Data/Managed/System.Runtime.dll
+ASG BUILD/Florida Driving Simulator_Data/Managed/System.Runtime.Serialization.dll
+ASG BUILD/Florida Driving Simulator_Data/Managed/System.Security.dll
+ASG BUILD/Florida Driving Simulator_Data/Managed/System.ServiceModel.Internals.dll
+ASG BUILD/Florida Driving Simulator_Data/Managed/System.Transactions.dll
+ASG BUILD/Florida Driving Simulator_Data/Managed/System.Xml.dll
+ASG BUILD/Florida Driving Simulator_Data/Managed/System.Xml.Linq.dll
+ASG BUILD/Florida Driving Simulator_Data/Managed/Unity.AI.Navigation.dll
+ASG BUILD/Florida Driving Simulator_Data/Managed/Unity.Burst.dll
+ASG BUILD/Florida Driving Simulator_Data/Managed/Unity.Burst.Unsafe.dll
+ASG BUILD/Florida Driving Simulator_Data/Managed/Unity.Collections.dll
+ASG BUILD/Florida Driving Simulator_Data/Managed/Unity.Collections.LowLevel.ILSupport.dll
+ASG BUILD/Florida Driving Simulator_Data/Managed/Unity.InputSystem.dll
+ASG BUILD/Florida Driving Simulator_Data/Managed/Unity.InputSystem.ForUI.dll
+ASG BUILD/Florida Driving Simulator_Data/Managed/Unity.Mathematics.dll
+ASG BUILD/Florida Driving Simulator_Data/Managed/Unity.Multiplayer.Center.Common.dll
+ASG BUILD/Florida Driving Simulator_Data/Managed/Unity.Rendering.LightTransport.Runtime.dll
+ASG BUILD/Florida Driving Simulator_Data/Managed/Unity.RenderPipeline.Universal.ShaderLibrary.dll
+ASG BUILD/Florida Driving Simulator_Data/Managed/Unity.RenderPipelines.Core.Runtime.dll
+ASG BUILD/Florida Driving Simulator_Data/Managed/Unity.RenderPipelines.Core.Runtime.Shared.dll
+ASG BUILD/Florida Driving Simulator_Data/Managed/Unity.RenderPipelines.Core.ShaderLibrary.dll
+ASG BUILD/Florida Driving Simulator_Data/Managed/Unity.RenderPipelines.GPUDriven.Runtime.dll
+ASG BUILD/Florida Driving Simulator_Data/Managed/Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll
+ASG BUILD/Florida Driving Simulator_Data/Managed/Unity.RenderPipelines.Universal.2D.Runtime.dll
+ASG BUILD/Florida Driving Simulator_Data/Managed/Unity.RenderPipelines.Universal.Config.Runtime.dll
+ASG BUILD/Florida Driving Simulator_Data/Managed/Unity.RenderPipelines.Universal.Runtime.dll
+ASG BUILD/Florida Driving Simulator_Data/Managed/Unity.RenderPipelines.Universal.Shaders.dll
+ASG BUILD/Florida Driving Simulator_Data/Managed/Unity.TextMeshPro.dll
+ASG BUILD/Florida Driving Simulator_Data/Managed/Unity.Timeline.dll
+ASG BUILD/Florida Driving Simulator_Data/Managed/Unity.VisualScripting.Antlr3.Runtime.dll
+ASG BUILD/Florida Driving Simulator_Data/Managed/Unity.VisualScripting.Core.dll
+ASG BUILD/Florida Driving Simulator_Data/Managed/Unity.VisualScripting.Flow.dll
+ASG BUILD/Florida Driving Simulator_Data/Managed/Unity.VisualScripting.State.dll
+ASG BUILD/Florida Driving Simulator_Data/Managed/UnityEngine.AccessibilityModule.dll
+ASG BUILD/Florida Driving Simulator_Data/Managed/UnityEngine.AIModule.dll
+ASG BUILD/Florida Driving Simulator_Data/Managed/UnityEngine.AMDModule.dll
+ASG BUILD/Florida Driving Simulator_Data/Managed/UnityEngine.AndroidJNIModule.dll
+ASG BUILD/Florida Driving Simulator_Data/Managed/UnityEngine.AnimationModule.dll
+ASG BUILD/Florida Driving Simulator_Data/Managed/UnityEngine.ARModule.dll
+ASG BUILD/Florida Driving Simulator_Data/Managed/UnityEngine.AssetBundleModule.dll
+ASG BUILD/Florida Driving Simulator_Data/Managed/UnityEngine.AudioModule.dll
+ASG BUILD/Florida Driving Simulator_Data/Managed/UnityEngine.ClothModule.dll
+ASG BUILD/Florida Driving Simulator_Data/Managed/UnityEngine.ClusterInputModule.dll
+ASG BUILD/Florida Driving Simulator_Data/Managed/UnityEngine.ClusterRendererModule.dll
+ASG BUILD/Florida Driving Simulator_Data/Managed/UnityEngine.ContentLoadModule.dll
+ASG BUILD/Florida Driving Simulator_Data/Managed/UnityEngine.CoreModule.dll
+ASG BUILD/Florida Driving Simulator_Data/Managed/UnityEngine.CrashReportingModule.dll
+ASG BUILD/Florida Driving Simulator_Data/Managed/UnityEngine.DirectorModule.dll
+ASG BUILD/Florida Driving Simulator_Data/Managed/UnityEngine.dll
+ASG BUILD/Florida Driving Simulator_Data/Managed/UnityEngine.DSPGraphModule.dll
+ASG BUILD/Florida Driving Simulator_Data/Managed/UnityEngine.GameCenterModule.dll
+ASG BUILD/Florida Driving Simulator_Data/Managed/UnityEngine.GIModule.dll
+ASG BUILD/Florida Driving Simulator_Data/Managed/UnityEngine.GraphicsStateCollectionSerializerModule.dll
+ASG BUILD/Florida Driving Simulator_Data/Managed/UnityEngine.GridModule.dll
+ASG BUILD/Florida Driving Simulator_Data/Managed/UnityEngine.HierarchyCoreModule.dll
+ASG BUILD/Florida Driving Simulator_Data/Managed/UnityEngine.HotReloadModule.dll
+ASG BUILD/Florida Driving Simulator_Data/Managed/UnityEngine.ImageConversionModule.dll
+ASG BUILD/Florida Driving Simulator_Data/Managed/UnityEngine.IMGUIModule.dll
+ASG BUILD/Florida Driving Simulator_Data/Managed/UnityEngine.InputForUIModule.dll
+ASG BUILD/Florida Driving Simulator_Data/Managed/UnityEngine.InputLegacyModule.dll
+ASG BUILD/Florida Driving Simulator_Data/Managed/UnityEngine.InputModule.dll
+ASG BUILD/Florida Driving Simulator_Data/Managed/UnityEngine.JSONSerializeModule.dll
+ASG BUILD/Florida Driving Simulator_Data/Managed/UnityEngine.LocalizationModule.dll
+ASG BUILD/Florida Driving Simulator_Data/Managed/UnityEngine.MarshallingModule.dll
+ASG BUILD/Florida Driving Simulator_Data/Managed/UnityEngine.MultiplayerModule.dll
+ASG BUILD/Florida Driving Simulator_Data/Managed/UnityEngine.NVIDIAModule.dll
+ASG BUILD/Florida Driving Simulator_Data/Managed/UnityEngine.ParticleSystemModule.dll
+ASG BUILD/Florida Driving Simulator_Data/Managed/UnityEngine.PerformanceReportingModule.dll
+ASG BUILD/Florida Driving Simulator_Data/Managed/UnityEngine.Physics2DModule.dll
+ASG BUILD/Florida Driving Simulator_Data/Managed/UnityEngine.PhysicsModule.dll
+ASG BUILD/Florida Driving Simulator_Data/Managed/UnityEngine.PropertiesModule.dll
+ASG BUILD/Florida Driving Simulator_Data/Managed/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll
+ASG BUILD/Florida Driving Simulator_Data/Managed/UnityEngine.ScreenCaptureModule.dll
+ASG BUILD/Florida Driving Simulator_Data/Managed/UnityEngine.ShaderVariantAnalyticsModule.dll
+ASG BUILD/Florida Driving Simulator_Data/Managed/UnityEngine.SharedInternalsModule.dll
+ASG BUILD/Florida Driving Simulator_Data/Managed/UnityEngine.SpriteMaskModule.dll
+ASG BUILD/Florida Driving Simulator_Data/Managed/UnityEngine.SpriteShapeModule.dll
+ASG BUILD/Florida Driving Simulator_Data/Managed/UnityEngine.StreamingModule.dll
+ASG BUILD/Florida Driving Simulator_Data/Managed/UnityEngine.SubstanceModule.dll
+ASG BUILD/Florida Driving Simulator_Data/Managed/UnityEngine.SubsystemsModule.dll
+ASG BUILD/Florida Driving Simulator_Data/Managed/UnityEngine.TerrainModule.dll
+ASG BUILD/Florida Driving Simulator_Data/Managed/UnityEngine.TerrainPhysicsModule.dll
+ASG BUILD/Florida Driving Simulator_Data/Managed/UnityEngine.TextCoreFontEngineModule.dll
+ASG BUILD/Florida Driving Simulator_Data/Managed/UnityEngine.TextCoreTextEngineModule.dll
+ASG BUILD/Florida Driving Simulator_Data/Managed/UnityEngine.TextRenderingModule.dll
+ASG BUILD/Florida Driving Simulator_Data/Managed/UnityEngine.TilemapModule.dll
+ASG BUILD/Florida Driving Simulator_Data/Managed/UnityEngine.TLSModule.dll
+ASG BUILD/Florida Driving Simulator_Data/Managed/UnityEngine.UI.dll
+ASG BUILD/Florida Driving Simulator_Data/Managed/UnityEngine.UIElementsModule.dll
+ASG BUILD/Florida Driving Simulator_Data/Managed/UnityEngine.UIModule.dll
+ASG BUILD/Florida Driving Simulator_Data/Managed/UnityEngine.UmbraModule.dll
+ASG BUILD/Florida Driving Simulator_Data/Managed/UnityEngine.UnityAnalyticsCommonModule.dll
+ASG BUILD/Florida Driving Simulator_Data/Managed/UnityEngine.UnityAnalyticsModule.dll
+ASG BUILD/Florida Driving Simulator_Data/Managed/UnityEngine.UnityConnectModule.dll
+ASG BUILD/Florida Driving Simulator_Data/Managed/UnityEngine.UnityCurlModule.dll
+ASG BUILD/Florida Driving Simulator_Data/Managed/UnityEngine.UnityTestProtocolModule.dll
+ASG BUILD/Florida Driving Simulator_Data/Managed/UnityEngine.UnityWebRequestAssetBundleModule.dll
+ASG BUILD/Florida Driving Simulator_Data/Managed/UnityEngine.UnityWebRequestAudioModule.dll
+ASG BUILD/Florida Driving Simulator_Data/Managed/UnityEngine.UnityWebRequestModule.dll
+ASG BUILD/Florida Driving Simulator_Data/Managed/UnityEngine.UnityWebRequestTextureModule.dll
+ASG BUILD/Florida Driving Simulator_Data/Managed/UnityEngine.UnityWebRequestWWWModule.dll
+ASG BUILD/Florida Driving Simulator_Data/Managed/UnityEngine.VehiclesModule.dll
+ASG BUILD/Florida Driving Simulator_Data/Managed/UnityEngine.VFXModule.dll
+ASG BUILD/Florida Driving Simulator_Data/Managed/UnityEngine.VideoModule.dll
+ASG BUILD/Florida Driving Simulator_Data/Managed/UnityEngine.VirtualTexturingModule.dll
+ASG BUILD/Florida Driving Simulator_Data/Managed/UnityEngine.VRModule.dll
+ASG BUILD/Florida Driving Simulator_Data/Managed/UnityEngine.WindModule.dll
+ASG BUILD/Florida Driving Simulator_Data/Managed/UnityEngine.XRModule.dll
+ASG BUILD/Florida Driving Simulator_Data/Plugins/x86_64/lib_burst_generated.dll
+ASG BUILD/Florida Driving Simulator_Data/resources.assets
+ASG BUILD/Florida Driving Simulator_Data/resources.assets.resS
+ASG BUILD/Florida Driving Simulator_Data/Resources/unity default resources
+ASG BUILD/Florida Driving Simulator_Data/Resources/unity_builtin_extra
+ASG BUILD/Florida Driving Simulator_Data/RuntimeInitializeOnLoads.json
+ASG BUILD/Florida Driving Simulator_Data/ScriptingAssemblies.json
+ASG BUILD/Florida Driving Simulator_Data/sharedassets0.assets
+ASG BUILD/MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll
+ASG BUILD/MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll
+ASG BUILD/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser
+ASG BUILD/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx
+ASG BUILD/MonoBleedingEdge/etc/mono/2.0/machine.config
+ASG BUILD/MonoBleedingEdge/etc/mono/2.0/settings.map
+ASG BUILD/MonoBleedingEdge/etc/mono/2.0/web.config
+ASG BUILD/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser
+ASG BUILD/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx
+ASG BUILD/MonoBleedingEdge/etc/mono/4.0/machine.config
+ASG BUILD/MonoBleedingEdge/etc/mono/4.0/settings.map
+ASG BUILD/MonoBleedingEdge/etc/mono/4.0/web.config
+ASG BUILD/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser
+ASG BUILD/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx
+ASG BUILD/MonoBleedingEdge/etc/mono/4.5/machine.config
+ASG BUILD/MonoBleedingEdge/etc/mono/4.5/settings.map
+ASG BUILD/MonoBleedingEdge/etc/mono/4.5/web.config
+ASG BUILD/MonoBleedingEdge/etc/mono/browscap.ini
+ASG BUILD/MonoBleedingEdge/etc/mono/config
+ASG BUILD/MonoBleedingEdge/etc/mono/mconfig/config.xml
+ASG BUILD/UnityCrashHandler64.exe
+ASG BUILD/UnityPlayer.dll
+Assets/Settings/Build Profiles.meta
+Assets/Settings/Build Profiles/Windows.asset
+Assets/Settings/Build Profiles/Windows.asset.meta
